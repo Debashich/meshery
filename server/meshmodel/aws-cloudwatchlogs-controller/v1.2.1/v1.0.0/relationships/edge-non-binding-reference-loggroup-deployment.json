@@ -1,0 +1,65 @@
+{
+  "id": "loggroup-deployment-observability",
+  "evaluationQuery": "edge_loggroup_deployment_logs",
+  "kind": "edge",
+  "metadata": {
+    "description": "CloudWatch LogGroup collects Deployment logs",
+    "styles": { "primaryColor": "", "svgColor": "", "svgWhite": "" },
+    "isAnnotation": false
+  },
+  "model": {
+    "version": "",
+    "name": "aws-cloudwatchlogs-controller",
+    "displayName": "",
+    "id": "loggroup-deployment-id",
+    "registrant": { "kind": "github" },
+    "model": { "version": "v1.2.1" }
+  },
+  "schemaVersion": "relationships.meshery.io/v1alpha3",
+  "selectors": [
+    {
+      "allow": {
+        "from": [
+          {
+            "id": null,
+            "kind": "LogGroup",
+            "match": {},
+            "model": {
+              "version": "",
+              "name": "aws-cloudwatchlogs-controller",
+              "id": "aws-cloudwatchlogs-id",
+              "registrant": { "kind": "github" }
+            },
+            "patch": {
+              "patchStrategy": "add",
+              "mutatorRef": [ ["spec", "logGroupName"] ],
+              "value": "/eks/deployments/{{ .mutatedRef.namespace }}/{{ .mutatedRef.name }}"
+            }
+          }
+        ],
+        "to": [
+          {
+            "id": null,
+            "kind": "Deployment",
+            "match": {},
+            "model": {
+              "version": "",
+              "name": "kubernetes",
+              "id": "kubernetes-deployment-id",
+              "registrant": { "kind": "github" }
+            },
+            "patch": {
+              "patchStrategy": "replace",
+              "mutatedRef": [ ["metadata", "name"], ["metadata", "namespace"] ]
+            }
+          }
+        ]
+      },
+      "deny": { "from": [], "to": [] }
+    }
+  ],
+  "subType": "reference",
+  "status": "enabled",
+  "type": "non-binding",
+  "version": "v1.0.0"
+}
