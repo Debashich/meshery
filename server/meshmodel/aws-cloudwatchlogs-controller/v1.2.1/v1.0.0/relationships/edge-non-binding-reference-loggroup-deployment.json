@@ -1,5 +1,5 @@
 {
-  "id": "loggroup-deployment-observability",
+  "id": "00000000-0000-0000-0000-000000000001",
   "evaluationQuery": "edge_loggroup_deployment_logs",
   "kind": "edge",
   "metadata": {
@@ -11,7 +11,7 @@
     "version": "",
     "name": "aws-cloudwatchlogs-controller",
     "displayName": "",
-    "id": "loggroup-deployment-id",
+    "id": "00000000-0000-0000-0000-000000000001",
     "registrant": { "kind": "github" },
     "model": { "version": "v1.2.1" }
   },
@@ -27,7 +27,7 @@
             "model": {
               "version": "",
               "name": "aws-cloudwatchlogs-controller",
-              "id": "aws-cloudwatchlogs-id",
+              "id": "00000000-0000-0000-0000-000000000001",
               "registrant": { "kind": "github" }
             },
             "patch": {

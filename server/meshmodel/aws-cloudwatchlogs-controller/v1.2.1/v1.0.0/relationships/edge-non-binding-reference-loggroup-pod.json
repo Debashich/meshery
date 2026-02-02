@@ -1,5 +1,5 @@
 {
-  "id": "loggroup-pod-observability",
+  "id": "00000000-0000-0000-0000-000000000002",
   "evaluationQuery": "edge_loggroup_pod_logs",
   "kind": "edge",
   "metadata": {
@@ -11,7 +11,7 @@
     "version": "",
     "name": "aws-cloudwatchlogs-controller",
     "displayName": "",
-    "id": "loggroup-pod-id",
+    "id": "00000000-0000-0000-0000-000000000002",
     "registrant": { "kind": "github" },
     "model": { "version": "v1.2.1" }
   },
@@ -27,7 +27,7 @@
             "model": {
               "version": "",
               "name": "aws-cloudwatchlogs-controller",
-              "id": "aws-cloudwatchlogs-id",
+              "id": "00000000-0000-0000-0000-000000000002",
               "registrant": { "kind": "github" }
             },
             "patch": {
@@ -45,7 +45,7 @@
             "model": {
               "version": "",
               "name": "kubernetes",
-              "id": "kubernetes-pod-id",
+              "id": "00000000-0000-0000-0000-000000000002",
               "registrant": { "kind": "github" }
             },
             "patch": {
