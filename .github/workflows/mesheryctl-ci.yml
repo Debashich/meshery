@@ -1,10 +1,5 @@
 name: Meshery Docs CLI Reference Update
 on:
-  push:
-    branches:
-      - "master"
-    paths:
-      - "mesheryctl/**"
   workflow_dispatch:
     inputs:
       logLevel:

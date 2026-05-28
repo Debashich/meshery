@@ -1,19 +1,5 @@
 name: Release Charts
 on:
-  # Only release when called by stable release workflow
-  # push:
-  #   branches:
-  #     - 'master'
-  #   tags:
-  #     - 'v*'
-  #   paths:
-  #     - 'install/kubernetes/**'
-  pull_request:
-    branches:
-      - 'master'
-    paths:
-      - 'install/kubernetes/**'
-  workflow_call:      
   workflow_dispatch:
     inputs:
       logLevel:

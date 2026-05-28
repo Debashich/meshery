@@ -8,7 +8,6 @@
 name: Auto-Merge Meeting Minutes
 
 on:
-  # Manual trigger for testing and operations
   workflow_dispatch:
     inputs:
       pr_number:
@@ -22,13 +21,6 @@ on:
         type: boolean
 
   # Trigger on PR events targeting master branch
-  pull_request_target:
-    types: [opened, synchronize, reopened]
-    branches:
-      - master
-    paths:
-      - 'docs/meetings/**'
-
 permissions:
   contents: write
   pull-requests: write

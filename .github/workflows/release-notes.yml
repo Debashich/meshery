@@ -1,9 +1,7 @@
 name: Release Notes Publisher
 
 on:
-  release:
-    types: 'published'
-
+  workflow_dispatch:
 jobs:
   update_release_notes_docs:
       runs-on: ubuntu-24.04

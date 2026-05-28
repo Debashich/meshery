@@ -1,6 +1,5 @@
 name: Staging Playground CNCF - Deploy
 on:
-  workflow_call:
   workflow_dispatch:
 jobs:
     cncf-staging-playground-rollout:

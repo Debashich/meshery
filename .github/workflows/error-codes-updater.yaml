@@ -1,18 +1,6 @@
 name: MeshKit Error Codes Utility Runner
 on:
-  push:
-    branches:
-      - "master"
-    paths:
-      - "**.go"
-      - ".github/workflows/error-codes-updater.yaml"
-  pull_request:
-    branches:
-      - "master"
-    paths:
-      - "**.go"
-      - ".github/workflows/error-codes-updater.yaml"
-
+  workflow_dispatch:
 jobs:
   Update-error-codes:
     name: Error codes utility

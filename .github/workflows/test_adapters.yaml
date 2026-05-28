@@ -2,56 +2,7 @@
 name: Adapter Integration - Core
 
 on:
-  workflow_call:
-    inputs:
-      expected_resources:
-        required: true
-        type: string
-      expected_resources_types:
-        required: true
-        type: string
-      expected_resources_namespaces:
-        required: true
-        type: string
-      service_url:
-        required: true
-        type: string
-      deployment_url:
-        required: true
-        type: string
-      adapter_name:
-        required: true
-        type: string
-      patternfile_name:
-        required: true
-        type: string
-      k8s_cni:
-        required: false
-        type: string
-        default: 'bridge'
-      k8s_version:
-        required: false
-        type: string
-      sm_version:
-        required: true
-        type: string
-      output_filename:
-        required: true
-        type: string
-      adapter_version:
-        required: true
-        type: string
-      provider: #default to local
-        required: false
-        type: string
-      job_type:
-        required: false
-        type: string
-        default: ""
-    secrets:
-      token:
-        required: true
-
+  workflow_dispatch:
 jobs:
   TestAdapter:
     strategy:

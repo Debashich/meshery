@@ -6,14 +6,6 @@ on:
         description: "Branch to deploy in the staging environment. If not provided, master branch of the repository will be used."
         default: "master"
         type: string
-  push:
-    branches:
-      - "master"
-    paths-ignore:
-      - "docs/**"
-      - ".github/**"
-      - "install/**"
-
 jobs:
   update-graphql-docs:
     name: Update GraphQL API Documentation

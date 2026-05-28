@@ -1,14 +1,6 @@
 name: Notify Remote Providers
 on:
-  push:
-#     branches:
-#       - 'master'
-    tags:
-      - 'v*'
-    paths-ignore:
-      - 'docs/**'
-      - 'mesheryctl/**'
-
+  workflow_dispatch:
 jobs:
   notify-remote-provider-build:
     name: Notify Remote Providers of Release

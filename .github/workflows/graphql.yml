@@ -1,11 +1,6 @@
 name: GraphQL API Documentation
 on:
-  push:
-    branches:
-      - "master"
-    paths:
-      - "server/internal/graphql/schema/schema.graphql"
-
+  workflow_dispatch:
 permissions:
   contents: write
 jobs:

@@ -1,22 +1,7 @@
 name: Rego Lint and Test
 
 on:
-  pull_request:
-    branches:
-      - "*"
-    paths:
-      - "**.rego"
-      - "server/policies/**"
-      - ".github/workflows/rego-lint-and-test.yml"
-  push:
-    branches:
-      - "master"
-    paths:
-      - "**.rego"
-      - "server/policies/**"
   workflow_dispatch:
-  workflow_call:
-
 jobs:
   lint-and-test-rego:
     name: Lint and Test Rego Policies

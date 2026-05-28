@@ -1,14 +1,7 @@
 name: Label Commenter
 
 on:
-  issues:
-    types:
-      - labeled
-
-  pull_request_target:
-    types:
-      - labeled
-
+  workflow_dispatch:
 permissions:
   contents: read
   issues: write

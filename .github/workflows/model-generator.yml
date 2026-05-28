@@ -1,9 +1,6 @@
 name: Model Component Generator and Updater
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 23 * * *"
-
 jobs:
   generate-and-update-components:
     if: github.repository == 'meshery/meshery'

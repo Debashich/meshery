@@ -1,15 +1,7 @@
 name: Build and Preview Docs
 
 on:
-  pull_request_target:
-    branches: [master]
-    types: [opened, synchronize, reopened, closed]
-    paths:
-      - '!**'
-      - 'docs/**'
-      - '.github/workflows/build-and-preview-docs.yml'
-      - 'mesheryctl/doc/**'
-
+  workflow_dispatch:
 permissions:
   contents: write
   pull-requests: write

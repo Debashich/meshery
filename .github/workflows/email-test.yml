@@ -1,16 +1,6 @@
 name: email test
 on:
-    workflow_dispatch:
-      inputs:
-        release-tag:
-          type: string
-          required: true
-          default: v0.6.103
-        to: 
-          type: string
-          required: true
-
-    
+  workflow_dispatch:
 jobs:
   email-meshery-release-notes-workflow:
     name: Email Meshery Release Notes

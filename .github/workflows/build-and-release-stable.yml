@@ -1,9 +1,6 @@
 name: Meshery Build and Releaser (stable)
 on:
-  push:
-    tags:
-      - "v*"
-
+  workflow_dispatch:
 jobs:
   update-graphql-docs:
     name: Update GraphQL API Documentation

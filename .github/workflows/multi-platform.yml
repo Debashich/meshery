@@ -1,18 +1,5 @@
 name: Multi-Platform Build and Release
 on:
-  release:
-    types: [published]
-  pull_request:
-    branches:
-      - 'master'
-  push:
-    tags:
-      - 'v*'  
-    branches:
-      - 'master'
-    paths-ignore:
-      - 'docs/**'
-      - '.github/**'
   workflow_dispatch:
     inputs:
       release-ver:

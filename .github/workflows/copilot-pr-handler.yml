@@ -17,15 +17,6 @@
 name: Copilot PR Handler
 
 on:
-  # Use pull_request_target to get write permissions for PRs from forks/bots
-  # This is safe here because we're only performing administrative actions,
-  # not checking out or running code from the PR
-  pull_request_target:
-    types: [opened, synchronize, reopened]
-    branches:
-      - master
-
-  # Allow manual triggering for testing and debugging
   workflow_dispatch:
     inputs:
       pr_number:
@@ -38,10 +29,6 @@ on:
         default: 'false'
         type: boolean
 
-# Minimal permissions required for this workflow
-# - actions: write - Required to approve workflow runs
-# - pull-requests: write - Required to mark PRs as ready for review
-# - contents: read - Required to access repository content
 permissions:
   actions: write
   pull-requests: write

@@ -1,14 +1,7 @@
 name: Build Server
 
 on:
-  workflow_call:
-    outputs:
-      backend-artifact:
-        description: 'Name of the backend artifact'
-        value: 'meshery-backend' 
-
-    secrets: {}
-
+  workflow_dispatch:
 jobs:
   build-backend:
     name: Backend build

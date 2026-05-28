@@ -1,9 +1,6 @@
 name: eslint-check
 on:
-  pull_request:
-    paths:
-      - 'ui/**'
-      - 'provider-ui/**'
+  workflow_dispatch:
 jobs:
   eslint:
     name: runner / eslint

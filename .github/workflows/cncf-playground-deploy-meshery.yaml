@@ -1,10 +1,5 @@
 name: Playground CNCF - Deploy
 on:
-  workflow_call:
-    inputs:
-      image:
-        type: string
-        default: playground-latest
   workflow_dispatch:
     inputs:
       image:

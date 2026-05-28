@@ -43,9 +43,6 @@
 
 name: "Meshery Docs Noob Tester"
 "on":
-  schedule:
-  - cron: "32 12 * * *"
-    # Friendly format: daily (scattered)
   workflow_dispatch:
     inputs:
       aw_context:

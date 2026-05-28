@@ -1,9 +1,6 @@
 name: Playground CNCF - Reset Non-essential Namespaces and Reboot
 on:
   workflow_dispatch:
-  schedule:
-    - cron:  '0 0 * * *'  # Run the job every day at midnight UTC
-
 jobs:
   reset:
     name: reset

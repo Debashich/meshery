@@ -1,21 +1,5 @@
 name: Golang Unit and Integration Tests
 on:
-  push:
-    branches:
-      - "master"
-    paths:
-      - "**.go"
-      - "**.golden"
-      - ".github/workflows/go-testing-ci.yml"
-      - ".github/.golangci.yml"
-  pull_request:
-    branches:
-      - "master"
-    paths:
-      - "**.go"
-      - "**.golden"
-      - ".github/workflows/go-testing-ci.yml"
-      - ".github/.golangci.yml"
   workflow_dispatch:
     inputs:
       logLevel:

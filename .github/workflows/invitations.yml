@@ -1,9 +1,6 @@
 name: Invite User to GH Org
 on:
-  issues:
-    types: [labeled]
-
-
+  workflow_dispatch:
 permissions:
   contents: read
   issues: write

@@ -1,15 +1,6 @@
 name: Build Meshery UI
 on:
-  workflow_call:
-    outputs:
-      ui-artifact:
-        description: 'Name of the UI artifact'
-        value: 'meshery-ui'
-      provider-ui-artifact:
-        description: 'Name of the Provider UI artifact'
-        value: 'meshery-provider-ui'
-    secrets: {}
-
+  workflow_dispatch:
 jobs:
   ui-build:
     name: UI build

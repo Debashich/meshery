@@ -1,11 +1,7 @@
 name: Slack Notify
 
 on:
-  watch:
-    types: [started]
-  issues:
-    types: [labeled]
-
+  workflow_dispatch:
 jobs:
   star-notify:
     if: github.event_name == 'watch'

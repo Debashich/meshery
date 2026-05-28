@@ -1,10 +1,7 @@
 name: Update Test Report
 
 on:
-  workflow_run:
-    workflows: ['Meshery UI and Server']  
-    types: [completed]
-
+  workflow_dispatch:
 permissions:
   actions: read
   contents: write
